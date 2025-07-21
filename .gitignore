@@ -1,0 +1,7 @@
+__pycache__
+.venv
+provided_data
+.DS_Store
+frames
+data
+outputs
