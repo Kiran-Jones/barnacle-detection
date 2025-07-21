@@ -103,6 +103,7 @@ This repository implements an image-based barnacle detection pipeline. The proje
 ### 1. Run the Detection Pipeline (CLI)
 
 ```bash
+cd src
 python3 barnacle_pipeline.py \
   --input_image_directory data \
   --output_image_directory outputs \
