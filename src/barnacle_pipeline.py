@@ -1,6 +1,6 @@
-from image_loader import ImageLoader 
-from frame_extractor import FrameExtractor
-from barnacle_detector import BarnacleDetector
+from .image_loader import ImageLoader 
+from .frame_extractor import FrameExtractor
+from .barnacle_detector import BarnacleDetector
 
 class BarnaclePipeline:
 

@@ -23,6 +23,7 @@ This repository implements an image-based barnacle detection pipeline. The proje
 │   ├── frame_img1.png          # generated frame images
 │   ├── frame_img2.png
 │   ├── ... 
+├── example.ipynb       
 ├── outputs                     # created during excecution 
 │   ├── barnacles_img1.png      # generated labeled barnacle images
 │   ├── barnacles_img2.png
@@ -32,11 +33,10 @@ This repository implements an image-based barnacle detection pipeline. The proje
 │   ├── img2_overview.svg       # generated barnacle pipeline plots
 │   ├── ...
 ├── requirements.txt          
-├── reset.sh                    # delete assets during excecution 
+├── reset.sh                    
 └── src
     ├── barnacle_detector.py
     ├── barnacle_pipeline.py
-    ├── example.ipynb
     ├── frame_extractor.py
     ├── generate_plots.py
     ├── image_loader.py

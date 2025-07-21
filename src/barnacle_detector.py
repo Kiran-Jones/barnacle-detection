@@ -2,7 +2,8 @@ import cv2
 import numpy as np
 import math
 import os
-from utils import save_image
+
+from .utils import save_image
 
 class BarnacleDetector:
 

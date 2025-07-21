@@ -1,9 +1,10 @@
 import cv2
 import numpy as np
-from image_loader import ImageLoader
 import os
-from utils import save_image
 from pathlib import Path
+
+from .image_loader import ImageLoader
+from .utils import save_image
 
 class FrameExtractor:
     def __init__(self, loader: ImageLoader, target_directory=None):

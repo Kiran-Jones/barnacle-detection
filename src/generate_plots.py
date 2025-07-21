@@ -3,17 +3,22 @@ import cv2
 import os
 
 
-def generate_plots():
-    plots_directory = "../plots"
+def generate_plots(data_directory="data", frame_directory="frames", output_directory="outputs", plots_directory="plots"):
+
+    data_directory = data_directory
+    frame_directory = frame_directory
+    output_directory = output_directory
+
+    plots_directory = plots_directory
     os.makedirs(plots_directory, exist_ok=True)
 
     image_names = ["img1.png", "img2.png", "unseen_img1.png", "unseen_img2.png"]
 
     for i, image_name in enumerate(image_names):
 
-        img = cv2.cvtColor(cv2.imread(f"../data/{image_name}"), cv2.COLOR_BGR2RGB)  
-        img_frame = cv2.cvtColor(cv2.imread(f"../frames/frame_{image_name}"), cv2.COLOR_BGR2RGB)  # Replace with your second image path
-        img_labeled = cv2.cvtColor(cv2.imread(f"../outputs/barnacles_{image_name}"), cv2.COLOR_BGR2RGB)
+        img = cv2.cvtColor(cv2.imread(f"{data_directory}/{image_name}"), cv2.COLOR_BGR2RGB)  
+        img_frame = cv2.cvtColor(cv2.imread(f"{frame_directory}/frame_{image_name}"), cv2.COLOR_BGR2RGB)  # Replace with your second image path
+        img_labeled = cv2.cvtColor(cv2.imread(f"{output_directory}/barnacles_{image_name}"), cv2.COLOR_BGR2RGB)
 
         # original image plot
         fig, axes = plt.subplots(1, 3, figsize=(12, 6), dpi=400)
